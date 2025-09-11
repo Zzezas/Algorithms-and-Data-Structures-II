@@ -8,6 +8,5 @@ int contagem_regressiva(int n){
         //recursive step
         printf("%d\n", n);
         contagem_regressiva(n-1);
-        return 1;
     }
 }
