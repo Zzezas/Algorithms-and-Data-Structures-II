@@ -15,7 +15,6 @@ int main() {
     // Precisamos removê-lo para a lógica do palíndromo funcionar corretamente.
     texto[strcspn(texto, "\n")] = '\0';
 
-    // Chama a função e verifica o resultado
     if (eh_palindromo(texto)) {
         printf("A palavra \"%s\" e um palindromo.\n", texto);
     } else {

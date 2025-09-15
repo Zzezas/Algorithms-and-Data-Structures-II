@@ -1,9 +1,6 @@
-#include "header.h" // Inclui o nosso próprio arquivo de cabeçalho
+#include "header.h" 
 
-// Implementação da função recursiva para contar os dígitos
 int contar_digitos(int numero) {
-    // Caso Base: Se o número for menor que 10, ele tem apenas 1 dígito.
-    // Este é o nosso ponto de parada.
     if (numero < 10) {
         return 1;
     }

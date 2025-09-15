@@ -1,4 +1,4 @@
-#include "header.h" // Inclui o nosso próprio arquivo de cabeçalho
+#include "header.h"
 
 // --- Função "Helper" Recursiva ---
 // 'static' significa que esta função só pode ser usada dentro deste arquivo.
@@ -24,8 +24,6 @@ static int inverter_recursivo(int numero_restante, int numero_invertido) {
     return inverter_recursivo(numero_restante / 10, novo_invertido);
 }
 
-// --- Função Principal (Wrapper) ---
-// Esta é a função chamada pelo main.c.
 int inverter_numero(int n) {
     // Inicia o processo recursivo. O número a ser processado é 'n'
     // e o resultado acumulado inicial é 0.

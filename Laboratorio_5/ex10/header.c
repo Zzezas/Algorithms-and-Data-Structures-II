@@ -1,7 +1,6 @@
 #include "header.h"
 #include <string.h> // Para usar a função strlen()
 
-// --- Função "Helper" Recursiva ---
 // 'static' a torna visível apenas dentro deste arquivo.
 // Ela verifica se o trecho da string entre 'inicio' e 'fim' é um palíndromo.
 static int eh_palindromo_recursivo(char str[], int inicio, int fim) {
@@ -24,8 +23,6 @@ static int eh_palindromo_recursivo(char str[], int inicio, int fim) {
     return eh_palindromo_recursivo(str, inicio + 1, fim - 1);
 }
 
-// --- Função Principal (Wrapper) ---
-// Esta é a função que o main.c chama.
 int eh_palindromo(char str[]) {
     int tamanho = strlen(str);
 
