@@ -1,0 +1,31 @@
+int i=99, j; //Declara duas variáveis do tipo inteiro: i, j, sendo que o valor de i=99.
+int *p; //cria um ponteiro do tipo inteiro chamado p
+p = &i; // diz que o ponteiro p aponta para o endereço de i
+j = *p + 300; // j recebe o valor apontado por p + 300 que resulta em 399.
+
+int a=5, b=12; //cria duas variaveis do tipo int
+int *p; // cria um ponteiro do tipo int chamado p
+int *q; // cria um ponteiro do tipo int chamado q
+p = &a; // atribui o endereço de a em p, o ponteiro agora aponta para o endereço de a 
+q = &b; // o ponteiro agora aponta para o endreço de b
+int c = *p + *q; /*cria uma nova variavel do tipo int chamada c e atribui seu
+valor ao valor apontado por p + o valor apontado por q, resultando em
+5 + 12 = 17.
+*/ 
+int i=7, j=3, c; //cria três variaveis do tipo int
+int *p; //cria um ponteiro do tipo int chamado p
+int *r; //cria um ponteiroi do tipo int chamado r
+p = &i; // atribui o "apontamento" do ponteiro p para o endereço de i
+r = &p; //atribui o "apontamento" do ponteiro r para o endereço do ponteiro p
+c = *r + j; // a variavel c recebe o valor apontado por r que é 7 + j que é 3, resultando em 10;
+
+int i=3, j=5;
+int *p, *q;
+p = &i;
+q = &j;
+/*Qual o valor das seguintes expressoes:
+a) p == &i; = verdadeiro
+b) *p - *q; =-2
+c)*&p; = p
+d)3* - *p/(*q)+7; = 6
+*/
